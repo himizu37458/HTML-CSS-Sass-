@@ -1,0 +1,7 @@
+@function getColumnWidth($width, $count) { //全体のwidthとカラムの数を引数に指定
+  $padding: 10px; //余白
+  //余白を全体からひく。残りをカウントの数で割る。小数点をなくす。
+  $columnWidth: floor(($width - ($padding * ($count - 1))) / $count); 
+  @debug $columnWidth;
+  @return $columnWidth; 
+}

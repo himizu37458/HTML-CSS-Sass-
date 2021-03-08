@@ -1,0 +1,92 @@
+h1 {
+  color: blue;
+  font-size: 15px;
+}
+
+div {
+  font-size: 9px;
+}
+
+span {
+  background-color:yellow;
+}
+
+#header {
+  font-size: 30px;
+}
+
+.text {
+  background-color: gray;
+}
+
+.black,
+.red,
+.green {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.base {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.black {
+  color: black;
+}
+.red {
+  color: red;
+}
+.green {
+  color: green;
+}
+
+p > a {
+  color: aqua;
+}
+
+h1 + p {
+  color: blueviolet;
+}
+
+p ~ h1 {
+  color: brown;
+}
+
+a:link {
+  color: crimson;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+  background-color: lightgray;
+}
+
+a:focus {
+  background-color: yellow;
+}
+
+ul {
+  font-size: 20px;
+}
+
+li:first-child {
+color: steelblue;
+}
+
+li:last-child {
+color: blueviolet;
+}
+
+li:only-child {
+  color: green;
+}
+
+#vertical {
+  writing-mode: vertical-rl;
+}

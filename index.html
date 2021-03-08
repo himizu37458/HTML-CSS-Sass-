@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"> 
+  <title>瑠衣のポートフォリオサイト</title>
+  <link rel="icon" href="favicon.ico">
+  <meta name="description" content="瑠衣のポートフォリオサイトです。">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="javascript.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="icon">
+          <img src="img/taro.png" alt="瑠衣のアイコンです" width="120" height="120">
+      </div>
+      <div class="info">
+        <h1>高岸瑠衣</h1>
+        <p>UI/UXデザイナー見習いです</p>
+        <ul>
+          <li>
+            <a href="https://dotinstall.com" target="_blank"> 
+              <img src="img/blog.png" alt="ブログサイトへのリンク画像" width="20" height="20">
+            </a>
+          </li>
+          <li>
+            <a href="https://dotinstall.com" target="_blank">
+              <img src="img/photos.png" alt="写真サイトへのリンク画像" width="20" height="20">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- 作品紹介 -->
+  <section class="works">
+    
+    <h1>WORKS</h1>
+    
+    <section>
+      <img src="img/work1.png" title=勇者 alt="勇者ゲームの紹介画像" width="400" height="260"> 
+      <h1>勇者ゲーム</h1>
+      <blockquote cite="https://dotinstall.com">
+        <p>
+          <em>
+            まとめて引用されたもの。楽しいアプリです。楽しいアプリです。楽しいアプリです。<br>
+          </em>
+        </p>
+      </blockquote>
+      <p>
+        この下にiframeを表示させる<br>
+        <iframe src="iframe.html" frameborder="5" width="200" ></iframe> <br>
+        以下表掲載とする。<br>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>日本語</th>
+              <th>英語</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>東京</td>
+              <td>tokyo</td>
+            </tr>
+              <tr>
+                <td>大阪</td>
+                <td>osaka</td>
+              </tr>
+              <tr>
+                <td>北海道</td>
+                <td>hokkaido</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>kyoto</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">最後までご覧いただき <br>ありがとうございます。</td>
+              </tr>
+            </tfoot>
+          </table>
+          以下text入力欄とする。<br>
+          <br>
+          <form action="" method="POST">
+            <fieldset>
+              <legend>IDとPassword</legend>
+              <label for="name">ID</label><input type="text" name="name" id="name" class="input"><br>
+              <label for="password">password</label><input type="password" name="pass" id="password" class="input"><br>
+            </fieldset>
+            <textarea name="info" id="" cols="80" rows="4" class="input">textを書く欄</textarea><br>
+            以下選択とする。（一つのみ可）<br>
+            <fieldset>
+              <legend>性別</legend>
+              <input type="radio" name="jender" value="male" id="male">
+              <label for="male">男性</label><br>
+              <input type="radio" name="jender" value="female" id="female">
+              <label for="female">女性</label><br>
+            </fieldset>
+            以下選択とする。（複数選択可）<br>
+            <fieldset>
+              <legend>音楽の種類</legend>
+              <input type="checkbox" name="music" value="rock" id="rock">
+              <label for="rock">rock</label><br>
+              <input type="checkbox" name="music" value="jazz" id="jazz">
+              <label for="jazz">jazz</label><br>
+              <input type="checkbox" name="music" value="pops" id="pops">
+              <label for="pops">pops</label><br>
+            </fieldset>
+            <br>
+            以下ドロップダウンメニューの選択とする。<br>
+            <select name="address" id="">
+              <optgroup label="関東">
+                <option value="tokyo">東京</option>
+                <option value="chiba">千葉</option>
+                <option value="saitama">埼玉</option>
+              </optgroup>
+              <optgroup label="関西">
+                <option value="osaka">大阪</option>
+                <option value="hyogo">兵庫</option>
+                <option value="kyoto">京都</option>
+              </optgroup>
+            </select><br><br>
+            <input type="submit" value="送信"><br>
+          </form>
+          <br>
+          楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
+      </p>
+      <p>
+        <small>Copyright &copy; 2018, Ink All rights reserved.</small>
+      </p>
+  </section>
+  <hr>
+  <section>
+    <img src="img/work2.png" title=宝 alt="宝探しゲームの紹介画像" width="400" height="260"> 
+    <h1>宝探しゲーム</h1>
+    <p>
+      <strong>
+        楽しいアプリです。
+        <q cite="https://dotinstall.com">
+          ここ一部が引用されたもの。
+        </q>
+          楽しいアプリです。<br>
+          <abbr title="hypertext markup language">
+            HTMLの略語。
+          </abbr>
+          好きな映画は
+          <cite>モールス <br></cite>
+          住所は
+          <address> 伊勢崎市 </address>
+          楽しいアプリです。
+          <code>drive</code>や<code>vehicle</code> 
+          はプログラム用語。<br> 楽しいアプリです。楽しいアプリです。楽しいアプリです。
+          <pre><code>
+            .info h1 {
+                  font-weight: normal;
+                  font-size: 24px;
+                  margin: 0;
+                }</code>
+                   楽しいアプリです。
+                楽しいアプリです。
+            楽しいアプリです。
+          </pre>
+      </strong>
+    </p>
+    <p><dfn>定義</dfn>とはdefiningのことです。</p>
+    <p>10×10は10<sup>2</sup>です。二酸化炭素はCO<sub>2</sub>です。</p>
+  </section>
+
+  <section>
+    <img src="img/work3.png" title=カード alt="神経衰弱の紹介画像" width="400" height="260"> 
+    <h1>神経衰弱</h1>
+    <p>
+      <ol>
+        <li>1つ目</li>
+        <li>2つ目</li>
+        <li>3つ目</li>
+      </ol>
+      <ul>
+        <li>1つ目
+          <ul>
+            <li>1つ目</li>
+            <li>2つ目</li>
+          </ul>
+        </li>
+        <li>2つ目</li>
+        <li>3つ目</li>
+      </ul>
+      <dl>
+        <dt>質問１</dt>
+        <dd>答え１</dd>
+        <dt>質問２</dt>
+        <dd>答え２</dd>
+        <dt>質問３</dt>
+        <dd>答え３</dd>
+      </dl>
+      <a href="https://dotinstall.com" target="_blank">ドットインストールのサイト</a>
+      <a href="#index">indexに飛ぶ</a>
+    </p>
+    楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。 楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。楽しいアプリです。
+    <p>
+      <ruby>薔薇<rp>(</rp><rt>ばら</rt><rp>)</rp></ruby>
+    </p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="index">
+    この文をindexとする。
+    </p>
+  </section>
+
+</section>
+
+  <footer>
+    <p>(c) dotinstall.com</p>
+  </footer>
+
+</body>
+</html>

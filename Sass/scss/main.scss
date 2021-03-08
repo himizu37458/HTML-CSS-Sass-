@@ -1,0 +1,92 @@
+$baseFontSize: 14px;
+$imgDir: "../img/";
+$brandColor: rgba(255, 0, 0, 0.9);
+$debugMode: true; //真偽の変数
+$x: 10;
+
+#main1 {
+  width: 90%;
+  background: url($imgDir + "bg.png"); //文字列の連結でurlを指定
+  // background: url("#{imgDir}bg.png"); 文字列の中で変数を展開する例
+  p {
+    font-size: $baseFontSize;
+    color: lighten($brandColor, 30%); //sassが初めから持っている色の関数lighten,darken
+    .sub {
+      font-size: $baseFontSize - 2px;
+    }
+    .sub2 {
+      font-size: #{12px + 12px}; //#{}を使って数値の計算もできる
+    }
+    .sub3 {
+      @if $debugMode == true {
+        color: red;
+      } @else {
+        color: blue;
+      }
+      .sub3-1 {
+        @if $x < 20 {
+          color: yellow;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      &:hover { //&は親要素のaを指す
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+
+//　繰り返し処理
+// @for
+@for $i from 10 through 14 { //$iが10から14です
+  .fs#{$i} { font-size: #{$i}px; } //#{}を使って$iを展開する
+}
+// @while
+$i: 10;
+@while $i <= 14 {
+  .fs#{$i} { font-size: #{$i}px; }
+  $i: $i + 1; //$i++は使えないから注意！
+}
+
+// リスト　似たようなデータをまとめて管理する
+$animals: cat, dog, tiger; //変数に割り当てる　配列みたいな考えかな
+@each $animal in $animals { //@each 個々に変数を割り当て in 配列の変数
+  .#{$animal}-icon { background: url(#{$animal}.png); } //cssの記述
+}
+
+// 関数　変数には有効範囲がある
+@import "settings";
+@import "functions";
+.grid {
+  float: left;
+  width: getColumnWidth($totalWidth, $columnCount);
+}
+
+// @mixin 複数のcssの設定を一つに管理できる
+@mixin round($radius: 4px) {
+  border-radius: $radius; //引数に変数を指定でき、初期値も設定できる
+}
+.label {
+  font-size: 12px;
+  @include round(10px); //roundのみだと4px
+}
+
+// @extend　継承（重複している部分を他にも継承できる）
+.msg {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  color: white;
+}
+.errorMsg {
+  @extend .msg;
+  background: red;
+}
+.warningMsg {
+  @extend .msg;
+  background: orange;
+}

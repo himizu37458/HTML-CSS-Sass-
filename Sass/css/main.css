@@ -1,0 +1,105 @@
+#main1 {
+  width: 90%;
+  background: url("../img/bg.png");
+}
+#main1 p {
+  font-size: 14px;
+  color: rgba(255, 153, 153, 0.9);
+}
+#main1 p .sub {
+  font-size: 12px;
+}
+#main1 p .sub2 {
+  font-size: 24px;
+}
+#main1 p .sub3 {
+  color: red;
+}
+#main1 p .sub3 .sub3-1 {
+  color: yellow;
+}
+#main1 p a {
+  text-decoration: none;
+}
+#main1 p a:hover {
+  font-weight: bold;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs13 {
+  font-size: 13px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.fs10 {
+  font-size: 10px;
+}
+
+.fs11 {
+  font-size: 11px;
+}
+
+.fs12 {
+  font-size: 12px;
+}
+
+.fs13 {
+  font-size: 13px;
+}
+
+.fs14 {
+  font-size: 14px;
+}
+
+.cat-icon {
+  background: url(cat.png);
+}
+
+.dog-icon {
+  background: url(dog.png);
+}
+
+.tiger-icon {
+  background: url(tiger.png);
+}
+
+.grid {
+  float: left;
+  width: 85px;
+}
+
+.label {
+  font-size: 12px;
+  border-radius: 10px;
+}
+
+.msg, .errorMsg, .warningMsg {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 4px;
+  color: white;
+}
+
+.errorMsg {
+  background: red;
+}
+
+.warningMsg {
+  background: orange;
+}
+
+/*# sourceMappingURL=main.css.map */
